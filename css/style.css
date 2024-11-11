@@ -80,6 +80,8 @@ h1{
 /* Fin del Header*/
 
 /*Main*/
+
+/*galeria de imagenes*/
 .galeria{
     width: 90%;
     margin:0 auto;
@@ -106,6 +108,7 @@ h1{
     
 }
 
+/*galeria de juguetes por edad*/
 .juguetesPorEdad{
     .galeriaPorEdad{
         padding:20px;
@@ -125,6 +128,7 @@ h1{
         }
     }
 }
+/*Banner montessori*/
 .lineaMontessori{
     text-align: center;
     img{
@@ -132,6 +136,7 @@ h1{
     }
 }
 
+/*Tarjetas d los mas elegidos*/
 .los_mas_elegidos{
     .galeriaElegidos{
         padding:20px;
@@ -152,8 +157,50 @@ h1{
         }
     }
 }
+/*Banner de Ofertas*/
+.banner_ofertas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    img{
+        width:100%;
+        height:100vh;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
 
-
+/*Tarjetas de juguetes por categoria*/
+.juguetes_por_categoria{
+    .galeria_por_categoria{
+        padding:20px;
+        margin:0 auto;
+        width: 90%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .tarjeta_categoria{
+            width: 200px;
+            right: auto;
+            text-align: center;
+            padding: 10px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+            border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;  
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius:200px ;
+             }
+        }
+    }
+}
 /*Fin del Main*/
 
 /*Footer*/
