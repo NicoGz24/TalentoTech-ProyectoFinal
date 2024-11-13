@@ -387,8 +387,15 @@ footer{
     }
 }
 /*FIN LINEA 2 A 4 AÑOS*/
-/*LINEA 5 A 8 AÑOS*/
+/*LINEA 5 A 7 AÑOS*/
 .main_5_años{
+    h1{
+        margin-bottom: 15px;
+    }
+}
+/*FIN LINEA 5 A 7 AÑOS*/
+/*LINEA 8 O MAS AÑOS*/
+.main_8_años{
     h1{
         margin-bottom: 15px;
     }
