@@ -17,12 +17,22 @@ h1{
      font-size: 3rem;
      text-align: center;
  }
+ @media  screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+}
  h2{
      padding-top:25px;
      color: rgb(68, 67, 68);
      font-size: 2rem;
      text-align: center;
  }
+@media  screen and (max-width: 768px) {
+        h2{
+            font-size: 1.5rem;
+        }
+}
 /*Header*/
 .header{
     position: fixed;    
@@ -40,6 +50,11 @@ h1{
         text-align: center;
     }
 }
+@media screen and (max-width: 768px) {
+    .subHeader{
+        display: none;
+    }
+}
 .header-contenedor{
     background-color: #ecbc6b;
     font-size: 15px;
@@ -49,6 +64,14 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .header-contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
 }
 
 .logo{
@@ -131,6 +154,16 @@ main{
         }
     }
 }
+@media screen and (max-width:768px){
+    .juguetesPorEdad{
+        .galeriaPorEdad{
+            justify-content: center;
+            .tarjetaJuguete{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
 /*Banner montessori*/
 .lineaMontessori{
     text-align: center;
@@ -160,6 +193,16 @@ main{
         }
     }
 }
+@media screen and (max-width:768px){
+    .los_mas_elegidos{
+        .galeriaElegidos{
+            justify-content: center;
+            .tarjeta_elegidos{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
 /*Banner de Ofertas*/
 .banner_ofertas {
     margin-top: 30px;
@@ -176,7 +219,16 @@ main{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 }
-
+@media  screen and (max-width: 768px) {
+    .banner_ofertas{
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        img{
+            height: 48vh;
+        }
+    }
+}
 /*Tarjetas de juguetes por categoria*/
 .juguetes_por_categoria{
     .galeria_por_categoria{
@@ -201,6 +253,16 @@ main{
                 object-fit: cover;
                 border-radius:200px ;
              }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .juguetes_por_categoria{
+        .galeria_por_categoria{
+            justify-content: center;
+            .tarjeta_categoria{
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -231,6 +293,17 @@ footer{
             height: 40px;
         }
     }
+}
+@media screen and (max-width:768px){
+   .footer{
+     flex-direction: column;
+     height: initial;
+     align-items: start;
+     row-gap:20px;
+     .logo_footer{
+         width: 100px;
+     }
+   }
 }
 .nav_footer{   
     ul{
@@ -284,22 +357,49 @@ footer{
         font-size: 20px;
         size: 20;
     }
-    textarea{
+    .texarea_contacto{
         font-size: 15px;
+    }
+    .textarea_mobile{
+        display:none;
     }
     button {
         width: 150px;
         height: 50px;
         font-size: 20px;
       }
-}
-.div_contacto{
-    width: 48%;
-    padding: 0 0 20px;
-    select{
-        font-size: 20px;
+    .div_contacto{
+        width: 48%;
+        padding: 0 0 20px;
+        select{
+            font-size: 20px;
+        }
     }
 }
+@media screen and (max-width:768px){
+    .formulario_contacto{
+        font-size: 15px;
+        .texarea_contacto{
+            display: none;
+        }
+        input{
+            font-size: 15px;
+        }
+        .textarea_mobile{
+            display: flex;
+            font-size: 15px;
+        }
+        button {
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+          }
+        .div_contacto{
+            select{
+                font-size: 15px;            }
+    }
+}
+
 /*FIN CONTACTO*/
 
 /*PRIMERA INFANCIA*/
@@ -313,8 +413,8 @@ footer{
     margin:0 auto;
     display:grid;
     justify-content: center;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas:    "foto1 foto2"
                             "foto3 foto2"
                             ;
@@ -369,6 +469,16 @@ footer{
             img{
                 width: 300px;
              }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .section_productos{
+        .galeria_de_productos{
+            justify-content: center;
+            .tarjeta_producto{
+                margin-bottom: 30px;
+            }
         }
     }
 }
