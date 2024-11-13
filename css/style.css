@@ -326,7 +326,11 @@ footer{
     right: 20px;
    
 }
-
+@media screen and (max-width:768px){
+    .fa-whatsapp{
+        font-size: 3em;
+}
+}
 /*Fin del Footer*/
 /*FIN INDEX*/
 
