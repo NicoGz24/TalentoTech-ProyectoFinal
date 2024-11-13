@@ -340,8 +340,6 @@ footer{
     height: 130vh;
     background-image: url(../assets/img/chicos_jugando7.jpg);
     background-size: cover;
-
-
 }
 
 .formulario_contacto {
@@ -353,6 +351,13 @@ footer{
     padding-top:30px;
     margin-left: 10px;
     font-size: 20px;
+    .div_contacto{
+        width: 48%;
+        padding: 0 0 20px;
+        select{
+            font-size: 20px;
+        }
+    }
     input{
         width: 100%;
         padding: 10px;
@@ -361,7 +366,7 @@ footer{
         font-size: 20px;
         size: 20;
     }
-    .texarea_contacto{
+    .textarea_contacto{
         font-size: 15px;
     }
     .textarea_mobile{
@@ -371,19 +376,12 @@ footer{
         width: 150px;
         height: 50px;
         font-size: 20px;
-      }
-    .div_contacto{
-        width: 48%;
-        padding: 0 0 20px;
-        select{
-            font-size: 20px;
-        }
     }
 }
 @media screen and (max-width:768px){
     .formulario_contacto{
         font-size: 15px;
-        .texarea_contacto{
+        .textarea_contacto{
             display: none;
         }
         input{
@@ -400,9 +398,10 @@ footer{
           }
         .div_contacto{
             select{
-                font-size: 15px;            }
+                font-size: 15px;            
+            }
+        }
     }
-}
 }
 
 /*FIN CONTACTO*/
