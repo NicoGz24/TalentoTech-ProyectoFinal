@@ -300,3 +300,82 @@ footer{
         font-size: 20px;
     }
 }
+/*FIN CONTACTO*/
+
+/*PRIMERA INFANCIA*/
+.main_primera_infancia{
+    h1{
+        margin-bottom: 15px;
+    }
+}
+.galeria_primera_infancia{
+    width: 90%;
+    margin:0 auto;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:    "foto1 foto2"
+                            "foto3 foto2"
+                            ;
+    gap:25px;
+    .hijo_1{
+        background-color: aqua;
+        grid-area:foto1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+    }
+    .hijo_2{
+        background-color: brown;
+        grid-area:foto2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+    }
+    .hijo_3{
+        background-color: blueviolet;
+        grid-area: foto3;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+    }
+}
+/*PRODUCTOS PRIMERA INFANCIA*/
+.section_productos{
+    .galeria_de_productos{
+        padding:20px;
+        margin:0 auto;
+        width: 60%;
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        .tarjeta_producto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: white;
+            padding: 10px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+            border-radius: 5px;
+            margin: 20px;
+            img{
+                width: 300px;
+             }
+        }
+    }
+}
+/*FIN PRIMERA INFANCIA*/
+/*LINEA MONTESSORI*/
+.main_linea_montessori{
+    h1{
+        margin-bottom: 15px;
+    }
+}
