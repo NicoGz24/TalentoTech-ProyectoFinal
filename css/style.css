@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: #d8d7d7;
 }
 
 h1{
@@ -80,7 +80,9 @@ h1{
 /* Fin del Header*/
 
 /*Main*/
-
+main{
+    margin-top: 200px;
+}
 /*galeria de imagenes*/
 .galeria{
     width: 90%;
@@ -91,6 +93,7 @@ h1{
     justify-content: center;
     align-items: center;
     border:0.5px solid gray;
+    margin-top: 10px;
 }
 .galeria img{
     width: 0px;
@@ -136,7 +139,7 @@ h1{
     }
 }
 
-/*Tarjetas d los mas elegidos*/
+/*Tarjetas de los mas elegidos*/
 .los_mas_elegidos{
     .galeriaElegidos{
         padding:20px;
@@ -252,3 +255,48 @@ footer{
    
 }
 /*Fin del Footer*/
+/*FIN INDEX*/
+
+/*CONTACTO*/
+.main_contacto{
+    margin-top: 140px;
+    height: 130vh;
+    background-image: url(../assets/img/chicos_jugando7.jpg);
+    background-size: cover;
+
+
+}
+
+.formulario_contacto {
+    height: 100vh;
+    display: flex; /* Establecemos flexbox para el contenedor */
+    justify-content: space-between; /* Centramos verticalmente los elementos hijos */
+    flex-wrap: wrap;
+    position:relative;
+    padding-top:30px;
+    margin-left: 10px;
+    font-size: 20px;
+    input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 20px;
+        size: 20;
+    }
+    textarea{
+        font-size: 15px;
+    }
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+      }
+}
+.div_contacto{
+    width: 48%;
+    padding: 0 0 20px;
+    select{
+        font-size: 20px;
+    }
+}
