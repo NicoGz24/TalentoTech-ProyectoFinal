@@ -221,7 +221,6 @@ main{
 }
 @media  screen and (max-width: 768px) {
     .banner_ofertas{
-        background-color: aqua;
         display: flex;
         justify-content: center;
         img{
@@ -327,6 +326,11 @@ footer{
     right: 20px;
    
 }
+@media screen and (max-width:768px){
+    .fa-whatsapp{
+        font-size: 3em;
+    }
+}
 /*Fin del Footer*/
 /*FIN INDEX*/
 
@@ -398,6 +402,7 @@ footer{
             select{
                 font-size: 15px;            }
     }
+}
 }
 
 /*FIN CONTACTO*/
