@@ -573,3 +573,13 @@ footer{
         }
     }
 }
+
+/*BOTONES PARA AGREGAR AL CARRITO*/
+.btn-agregar {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #030303;
+    background-color: #ecbc6b;
+    border-radius: 5px;
+  }
