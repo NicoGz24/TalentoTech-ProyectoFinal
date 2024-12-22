@@ -33,7 +33,9 @@
                 </ul>
             </nav>
             <div class="contenedorCarrito">
-                <img src="./assets/img/icono-carrito.png" alt="Carrito" class="carrito">
+                <a href="./pages/carrito.html">
+                    <img src="./assets/img/icono-carrito.png" alt="Carrito" class="carrito">
+                </a>
                 <a href="./pages/contacto.html">
                     <img src="./assets/img/icono-mail.png" alt="Contacto" class="contacto">
                 </a>
@@ -91,31 +93,31 @@
                     <img src="./assets/img/juguete_cat03.png" alt="producto">
                     <h3>Sonajero Vaquita</h3>
                     <h4>$14.400</h4>
-                    <a href="">Agregar Carrito</a>
+                    <button class="btn btn-success btn-agregar" data-nombre="Sonajero Vaquita" data-precio="14400">Agregar Carrito</button>
                 </div>
                 <div class="tarjeta_elegidos">
                     <img src="./assets/img/juguete_cat39.png" alt="producto">
                     <h3>Set Barco Pirata</h3>
                     <h4>$14.900</h4>
-                    <a href="">Agregar Carrito</a>
+                    <button class="btn btn-success btn-agregar" data-nombre="Set Barco Pirata" data-precio="14900">Agregar Carrito</button>
                 </div>
                 <div class="tarjeta_elegidos">
                     <img src="./assets/img/juguete_cat38.png" alt="producto">
                     <h3>Muñeca Barbie Básica</h3>
                     <h4>$14.200</h4>
-                    <a href="">Agregar Carrito</a>
+                    <button class="btn btn-success btn-agregar" data-nombre="Muñeca Barbie Básica" data-precio="14200">Agregar Carrito</button>
                 </div>
                 <div class="tarjeta_elegidos">
                     <img src="./assets/img/juguete_cat01.png" alt="producto">
                     <h3>Sonajero de Zorro</h3>
                     <h4>$11.300</h4>
-                    <a href="">Agregar Carrito</a>
+                    <button class="btn btn-success btn-agregar" data-nombre="Sonajero de Zorro" data-precio="11300">Agregar Carrito</button>
                 </div>
                 <div class="tarjeta_elegidos">
                     <img src="./assets/img/juguete_cat26.png" alt="producto">
                     <h3>Juego de Mesa Pingüino</h3>
                     <h4>$9.400</h4>
-                    <a href="">Agregar Carrito</a>
+                    <button class="btn btn-success btn-agregar" data-nombre="Juego de Mesa Pingüino" data-precio="9400">Agregar Carrito</button>
                 </div>
             </div>
         </section>
@@ -193,5 +195,6 @@
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+    <script src="./js/agregar_carrito.js"></script>
 </body>
 </html>

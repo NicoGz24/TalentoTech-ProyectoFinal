@@ -186,7 +186,14 @@ main{
             padding: 10px;
             box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
             border-radius: 5px;
-           
+            button {
+                width: 150px;
+                height: 40px;
+                font-size: 15px;
+                color: #030303;
+                background-color: #ecbc6b;
+                border-radius: 5px;
+              }
             img{
                 width: 200px;
              }
