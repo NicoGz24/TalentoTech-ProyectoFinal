@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>Contacto</title>
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="Elephant.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Elephant.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header">
@@ -42,18 +43,21 @@
     <main class="main_contacto">
         <h1>¿En qué podemos ayudarte?</h1>
         <div class="formulario_contacto">
-            <form action="https://formspree.io/f/mldenbjr" method="POST">
+            <form action="https://formspree.io/f/mldenbjr" id="formulario" method="POST">
                 <div class="div_contacto">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" size="70" placeholder="ingrese su nombre" name="nombre" id="nombre" required>
+                    <input type="text" size="70" placeholder="ingrese su nombre" name="nombre" id="nombre" >
+                    <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
                 </div>
                 <div class="div_contacto">
                     <label for="apellido">Apellido:</label>
-                    <input type="text" size="70" placeholder="ingrese su apellido" name="apellido" id="apellido" required>
+                    <input type="text" size="70" placeholder="ingrese su apellido" name="apellido" id="apellido" >
+                    <small class="text-danger d-none" id="errorApellido">El apellido es obligatorio.</small>
                 </div>
                 <div class="div_contacto">
                     <label for="email">Email:</label>
-                    <input type="email" size="70" placeholder="ingrese su email" name="email" id="email" required>
+                    <input type="email" size="70" placeholder="ingrese su email" name="email" id="email" >
+                    <small class="text-danger d-none" id="errorEmail">El email es obligatorio.</small>
                 </div>
                 <div class="div_contacto">
                     <label for="tipo_consulta">Tipo de Consulta</label>
@@ -64,14 +68,14 @@
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                <div class="textarea_contacto">
-                    <textarea placeholder="Dejanos tu mensaje...."  name="mensaje" cols="70" rows="10"  id="mensaje"></textarea>
+                <div class="col-7 mt-3">   
+                    <textarea class="form-control" placeholder="Dejanos tu mensaje...."  id="mensaje" name="mensaje"></textarea>
+                    <small class="text-danger d-none" id="errorMensaje">El mensaje debe tener al menos 10 caracteres.</small>
                 </div>
-                <div class="textarea_mobile">
-                    <textarea placeholder="Dejanos tu mensaje...."  name="mensaje_mobile" cols="40" rows="10"  id="mensaje_mobile"></textarea>
+                <div class="mt-3 col-12">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
                 </div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
             </form>
         </div>     
     </main>
@@ -108,5 +112,7 @@
             <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/validacion.js"></script>
 </body>
 </html>

@@ -340,6 +340,7 @@ footer{
     height: 130vh;
     background-image: url(../assets/img/chicos_jugando7.jpg);
     background-size: cover;
+    margin-top: 170px;
 }
 
 .formulario_contacto {
@@ -373,7 +374,7 @@ footer{
         display:none;
     }
     button {
-        width: 150px;
+        width: 130px;
         height: 50px;
         font-size: 20px;
     }
