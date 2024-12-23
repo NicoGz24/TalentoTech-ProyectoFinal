@@ -18,15 +18,21 @@ Para la etapa final se proyecta:
 ***********************************************************************************************************************
 ENTREGA FINAL
 *Se agregaron las paginas con su estructura y logica
+    
     *aire_libre
     *didacticos
     *electronicos
     *juegos_de_mesa
     *ofertas
     *carrito
+    
 *Se agrego funcionalidad para manejar el carrito de compras para lo que se crearon los archivos 
+    
     *agregar_carrito.js
     *carrito.js
+    
 *Se agrego funcionalidad para validar los datos de entrada del formulario de contacto para lo cual se creo el archivo
+    
     *validacion.js
+    
 *En algunas paginas como en la del carrito se utilizo bootstrap para mejorar estilo y funcionalidad.
